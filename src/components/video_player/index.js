@@ -15,23 +15,7 @@ export default class Video extends Component {
     console.log('Video')
   }
 
-  componentDidMount() {
-    /*global.fetch(`http://192.168.8.107:8080/stream/video.mjpeg`)
-      .then(res => {
-        console.log(res);
-        return res.json()
-      }, er => {
-        console.log(er);
-      })
-      .then(res => this.setState({
-        thumbnailUrl: res.video.thumbs['640'],
-        videoUrl:`http://192.168.8.107:8080/stream/video.mjpeg`, //res.request.files.hls.cdns[res.request.files.hls.default_cdn].url,
-        video: res.video,
-      }));*/
-  }
-
   render() {
-    //console.log(this.state.videoUrl)
     return (
 
       <WebView
